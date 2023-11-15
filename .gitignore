@@ -1,0 +1,7 @@
+.env
+node_modules
+
+dump/*.json
+# ((忽略掉dump資料夾內的所有東西 除了.gitkeep，.gitkeep是為了保留dump資料夾))
+# dump/*
+# !dump/.gitkeep
