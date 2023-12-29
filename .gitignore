@@ -1,7 +1,11 @@
 .env
 node_modules
 
+# ((寫法2)) ((忽略掉dump資料夾內的所有json檔))
 dump/*.json
-# ((忽略掉dump資料夾內的所有東西 除了.gitkeep，.gitkeep是為了保留dump資料夾))
-# dump/*
-# !dump/.gitkeep
+
+# ((寫法1))
+# dump/*            #((*表所有東西 => 忽略掉dump資料夾內的所有東西))
+# !dump/.gitkeep    #((!是相反的意思 => 除了dump的.gitkeep))
+
+# ((.gitkeep的功能是為了要git保留dump資料夾，就算是空的。通常git不會偵測到空資料夾變更，會當作沒有這個東西，若是空資料夾想讓git知道有這個東西的話，要在資料夾內建一個.gitkeep的檔案，檔案內什麼都不用打只要有檔案即可。))
